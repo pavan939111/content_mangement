@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnp
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+.build/
+DerivedData/
+
+# Android/Gradle
+.gradle/
+local.properties
+*.apk
+*.aab
+
+# Test coverage
+coverage/
+
+# Supabase local dev
+supabase/.branches/
+supabase/.temp/
+
+# Secrets — never commit
+*.pem
+*.key
+credentials.json

@@ -1,0 +1,11 @@
+-- pgTAP RLS tenant-isolation test suite placeholder.
+--
+-- Must cover for every exposed tenant table:
+-- SELECT cross-tenant deny, INSERT cross-tenant deny, UPDATE cross-tenant deny,
+-- DELETE cross-tenant deny, UPSERT bypass attempt deny, token vault table client-access deny,
+-- missing/malformed JWT claims, membership revoked mid-session.
+--
+-- Test case IDs: INT-RLS-01 through INT-RLS-08 per integration-test-cases.md section 5.
+--
+-- Derived from: docs/testing/integration-test-cases.md section 5;
+-- docs/architecture/ARCHITECTURE-18-database-erd-v2.md RLS policies

@@ -1,0 +1,19 @@
+{
+  "name": "creatoros",
+  "private": true,
+  "workspaces": [
+    "apps/api-bff",
+    "apps/connector-service",
+    "apps/worker",
+    "packages/contracts",
+    "packages/observability"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

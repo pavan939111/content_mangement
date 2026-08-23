@@ -1,0 +1,20 @@
+# CI pipeline implementing release-gates.md PR stage criteria.
+#
+# Expected checks:
+# - Lint and type check across all TS packages
+# - OpenAPI spectral lint and compatibility diff (oasdiff)
+# - Generated TypeScript client compilation from OpenAPI spec
+# - Unit tests (Vitest)
+# - Integration tests via Testcontainers (Postgres 16, Redis 7) including pgTAP RLS suite
+#
+# Full gate definitions: docs/testing/release-gates.md section 3 PR row
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI scaffold — populate with actual steps per docs/testing/release-gates.md"

@@ -1,0 +1,6 @@
+packages:
+  - apps/api-bff
+  - apps/connector-service
+  - apps/worker
+  - packages/contracts
+  - packages/observability

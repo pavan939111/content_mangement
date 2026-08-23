@@ -21,20 +21,31 @@ CreatorOS is a mobile-native connected content workspace for professional UGC cr
 | Section | Path | Contents |
 |---|---|---|
 | **Product** | `docs/product/` | Vision, PRD, scope, definition of done, milestone plan |
-| **Functional Requirements** | `docs/requirements/functional/` | FRS-01, FRS-03, FRS-06, FRS-07, FRS-09 |
-| **Non-Functional Requirements** | `docs/requirements/non-functional/` | Performance, security, offline sync, reliability, localization |
+| **Functional Requirements** | `docs/requirements/functional/` | FRS-01, FRS-03, FRS-06, FRS-07, FRS-09, FRS-14 |
+| **Non-Functional Requirements** | `docs/requirements/non-functional/` | Performance/SLOs, security, offline sync, reliability, localization, storage, accessibility |
 | **Traceability** | `docs/requirements/traceability/` | Requirement matrix, launch-gate metric mapping |
+| **UI/UX** | `docs/uiux/` | Design principles, information architecture, screen inventory, user flows, state matrix, components, design tokens |
 | **Architecture** | `docs/architecture/` | System overview, data layer, connector service, ERD, RevenueCat design |
-| **API Specification** | `docs/api/` | OpenAPI 3.1 spec, auth flows, endpoint docs, provider integrations |
+| **API Specification** | `docs/api/` | OpenAPI 3.1 spec, auth flows, endpoint docs, cross-cutting rules, provider integrations |
 | **Technical Design Docs** | `docs/tdd/` | TDD-01 through TDD-08 covering mobile DB through observability |
-| **Testing** | `docs/testing/` | Unit through release-gate test cases |
+| **Testing** | `docs/testing/` | Test strategy, unit through release-gate test cases |
 | **Validation** | `docs/validation/` | Interview scripts, concierge prototype plan, scorecard |
+| **V1 Archive** | `docs/archive/v1/` | Original local-first workspace documentation (superseded, reference only) |
 
 ## Repository Structure
 
 ```text
 CreatorOS/
 ├── docs/                    # All product/design/engineering documentation
+│   ├── product/             # Vision, PRD, scope, DoD, milestones
+│   ├── requirements/        # FRS + NFR + traceability
+│   ├── uiux/                # Design specs and user flows
+│   ├── architecture/        # Technical architecture documents
+│   ├── api/                 # OpenAPI spec + endpoint/provider docs
+│   ├── tdd/                 # Technical design documents
+│   ├── testing/             # Test strategy and test cases
+│   ├── validation/          # User validation instruments
+│   └── archive/v1/          # Superseded v1 documentation (reference only)
 ├── apps/
 │   ├── ios/                 # iOS application (SwiftUI)
 │   ├── android/             # Android application (Jetpack Compose)
